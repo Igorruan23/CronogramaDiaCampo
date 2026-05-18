@@ -88,6 +88,23 @@ header p {
     font-size: clamp(1rem, 3vw, 1.2rem);
     font-weight: 500;
 }
+
+.info-evento {
+    margin-top: 1.5rem;
+    background: rgba(48, 145, 202, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px dashed var(--background-color);
+}
+
+.info-evento p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-evento p:last-child {
+    margin-bottom: 0;
+}
     
 /* Seções Gerais */
 .section {
