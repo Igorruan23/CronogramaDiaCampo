@@ -45,10 +45,8 @@ img {
 header {
     background-color: #87ceeb;
     background-image: url('Images/ImagemBg.jpg'), url('Images/ImagemBg2.jpg');
-    /* No mobile, cobrimos bem usando cover (a imagem que ficar por cima pode sobrepor um pouco a outra 
-       se usarmos center, então vamos tentar empilhar ou mesclar as posições) */
     background-size: cover, cover;
-    background-position: center, center;
+    background-position: left center, right center;
     background-repeat: no-repeat, no-repeat;
     color: white;
     text-align: center;
@@ -69,7 +67,6 @@ header {
     padding: 2rem 1rem;
     background-color: rgba(255, 255, 255, 0.9);
     border: 4px solid var(--background-color);
-    /* No mobile começamos com um retângulo arredondado amigável, pois o círculo absoluto engoles muito espaço */
     border-radius: 20px; 
     width: 100%;
     max-width: 500px;
@@ -295,7 +292,7 @@ footer p {
     /* Tablet e superiores */
     .destaque-circulo {
         padding: 3rem;
-        border-radius: 20px; /* Mantém um quadrado arredondado charmoso para não deformar nem ficar "torto" */
+        border-radius: 20px; 
     }
 
     .logo {
@@ -303,14 +300,13 @@ footer p {
     }
 
     .timeline li {
-        /* No tablet, já colocamos em linha pois há mais espaço */
         flex-direction: row;
         align-items: center;
         gap: 1rem;
     }
 
     .timeline li strong {
-        width: 160px; /* Trava a largura do tempo de novo para alinhar no desktop */
+        width: 160px; 
     }
 }
 
@@ -318,9 +314,6 @@ footer p {
     /* Desktop */
     header {
         padding: 4rem 2rem;
-        /* Troca o 100% por "auto" no height para manter a proporção e não esticar (deformar/entortar) as imagens */
-        background-size: 50% auto, 50% auto;
-        background-position: top left, top right;
     }
 
     .destaque-circulo {
