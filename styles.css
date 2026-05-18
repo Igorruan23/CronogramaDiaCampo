@@ -40,7 +40,7 @@ img {
 /* Cabeçalho */
 header {
     background-color: #87ceeb;
-    background-image: url('Images/imagemBG.jpg'), url('Images/imagemBg2.jpg');
+    background-image: url('Images/imagemBg.jpg'), url('Images/imagemBg2.jpg');
     /* No mobile, cobrimos bem usando cover (a imagem que ficar por cima pode sobrepor um pouco a outra 
        se usarmos center, então vamos tentar empilhar ou mesclar as posições) */
     background-size: cover, cover;
