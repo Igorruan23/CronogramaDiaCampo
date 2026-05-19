@@ -155,33 +155,37 @@ h2 {
 .timeline {
     list-style: none;
     margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
 }
 
 .timeline li {
-    display: flex;
-    /* Empilhando por padrão (Mobile) */
-    flex-direction: column; 
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 0.5rem;
-    padding: 1rem;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 6px;
+    padding: 1.25rem 1.5rem;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    box-shadow: 0 10px 14px rgba(0,0,0,0.08);
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
 }
 
 .timeline li:hover {
     background-color: var(--hover-bg);
     color: white;
+    transform: translateY(-2px);
 }
 
 .timeline li strong {
     color: var(--primary-color);
-    font-size: 1.1rem;
-    width: 100%;
+    font-size: 1.2rem;
+    letter-spacing: 0.3px;
 }
 
 .timeline li span {
-    flex: 1;
     font-size: 1rem;
+    color: #f5f7ff;
 }
 
 /* Grid de Temas (Cards) */
@@ -195,13 +199,14 @@ h2 {
 
 .card {
     background-color: var(--background-color);
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.3);
+    padding: 1.75rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.2);
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.25rem;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.12);
 }
 
 .card h3 {
@@ -300,13 +305,13 @@ footer p {
     }
 
     .timeline li {
-        flex-direction: row;
+        grid-template-columns: 160px 1fr;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .timeline li strong {
-        width: 160px; 
+        width: auto;
     }
 }
 
